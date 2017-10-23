@@ -1,72 +1,46 @@
-1. Eddie
-2. Chachi
+var objShow= [	
+	{
+		question: "img/question0.jpg",
+		answer:"Good Times"
+	},
 
+	{
+		question: "img/question1.jpg",
+		answer:"Happy Days"
+	},
 
-
-
-
-
-var objPeople = [
+	{  
+		question: "img/question2.jpg",
+		answer:"Laverne and Shirley"
+	},
 	
 	{
-		username:"sam",
-		password:"password25"
+		question: "img/question3.jpg",
+		answer:"Sanford and Son"
 	},
 
 	{
-		username:"matt",
-		password:"password88"
+		question: "img/question4.jpg",
+		answer:"Taxi"
 	},
 
 	{
-		username:"chris",
-		password:"password3"
+		question: "img/question5.jpg",
+		answer:"Three's Company"
 	}
 ]
 
- function login() {
-	var username = document.getElementById('username').value
-	var password = document.getElementById("password").value
-
-	for(i=0; i<objPeople.length; i++) {
-		if(username == objPeople[i].username && password == objPeople[i].password) {
-			alert(username + " is logged in!")
-			return
-		}
+	for (var i = 0; i < objShow.length; i++) {
+		var main = document.getElementById("main")
+		var img = document.createElement("img")
+		var question = objShow[i].question
+		img.setAttribute("src", question)
+		img.className= "imgClass"
+		main.appendChild(img)
+		var input = document.createElement("input")
+		input.setAttribute("id", "userInput")
+		main.appendChild(input)
 	}
-	alert("incorrect username or password")
-}
-
-function register(){
-	var newUsername = document.getElementById("newUsername").value
-	var newPassword = document.getElementById("newPassword").value
-	var newUser = {
-		username: newUsername,
-		password: newPassword
-	}
-
-	for(i=0; i<objPeople.length; i++) {
-		if(newUsername == objPeople[i].username) {
-			alert("that username is already taken")
-			return
-		} else if (newPassword.length < 8) {
-			alert("that password is too short")
-			return
-		}
-
-	}
-
-		objPeople.push(newUser)
-console.log(objPeople)
-}
-
-
-
-
-
-
-
-
 
 
 
