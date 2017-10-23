@@ -1,3 +1,11 @@
+1. Eddie
+2. Chachi
+
+
+
+
+
+
 var objPeople = [
 	
 	{
