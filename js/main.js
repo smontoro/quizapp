@@ -35,41 +35,26 @@ var objShow= [
 		var question = objShow[i].question
 		var main = document.getElementById("main")
 		var cardDiv = document.createElement("div")
-		cardDiv.className = "card"
-		cardDiv.className = "cardDiv"
+		cardDiv.className = "card, col-6"
 		main.appendChild(cardDiv)
+		var ol = document.createElement("ol")
+		cardDiv.appendChild(ol)
+		var li = document.createElement("li")
+		ol.appendChild(li)
 		var showImg = document.createElement("img")
 		showImg.setAttribute("src", question)
-		showImg.className = "showImg"
-		cardDiv.appendChild(showImg)
+		showImg.className = "showImg, card-img-top"
+		li.appendChild(showImg)
+		/*var cardBodyDiv = document.createElement("div")
+		cardBodyDiv.className = "card-body"
+		cardDiv.appendChild(cardBodyDiv)
+		var showImg = document.createElement("img")
+		showImg.setAttribute("src", question)
+		showImg.className = "showImg, card-img-top"
+		cardBodyDiv.appendChild(showImg)
 		var inputAnswer = document.createElement("input")
+		cardBodyDiv.appendChild(inputAnswer)*/
 
-
-
-
-
-
-
-
-
-
-		//This creates an img and stores it in the img var
-		/*main.className = "card"
-		var img = document.createElement("img")
-		//This stores whatever question object is run through in the question var
-		var question = objShow[i].question
-		//this sets the src of the img element to the question image in the object
-		img.setAttribute("src", question)
-		//Gives the img an .imgClass
-		img.className= "imgClass"
-		//adds the img element the .main div
-		main.appendChild(img)
-		//creates an input element and stores it in the input var
-		var input = document.createElement("input")
-		//sets the input at
-		input.setAttribute("id", "userInput")
-		//
-		main.appendChild(input)*/
 	}
 
 
