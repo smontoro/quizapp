@@ -10,26 +10,72 @@
 <div class="background">
 
 <header class="my-5 text-center">
-	<h1>Guess that 70's Sitcom!</h1>
+	<h1>Guess That 70's Sitcom!</h1>
 </header>
 
-<div id="main" class="container my-5">
+<!-- Quiz Question Elements - Questions are added using JavaScript -->
+	<div class="container mx-auto">
+			<div class="container text-center">
+				<div class="form-group row">
+					<div id="question0" class="col-6"></div>
+					<div class="col-6">
+						<p class="d-inline-block">1.</p>
+					 	<input id="answer0" type="text" class="form-control text-center col-6 d-inline-block" placeholder="Your Answer Here">
+					</div>
+				</div>
+				<div class="form-group row">
+					<div id="question1" class="col-6"></div>
+					<div class="col-6">
+						<p class="d-inline-block">2.</p>
+					 	<input id="answer1" type="text" class="form-control text-center col-6 d-inline-block" placeholder="Your Answer Here">
+					</div>
+				</div>
+				<div class="form-group row">
+					<div id="question2" class="col-6"></div>
+					<div class="col-6">
+						<p class="d-inline-block">3.</p>
+					 	<input id="answer2" type="text" class="form-control text-center col-6 d-inline-block" placeholder="Your Answer Here">
+					</div>
+				</div>
+				<div class="form-group row">
+					<div id="question3" class="col-6"></div>
+					<div class="col-6">
+						<p class="d-inline-block">4.</p>
+					 	<input id="answer3" type="text" class="form-control text-center col-6 d-inline-block" placeholder="Your Answer Here">
+					</div>
+				</div>
+				<div class="form-group row">
+					<div id="question4" class="col-6"></div>
+					<div class="col-6">
+						<p class="d-inline-block">5.</p>
+					 	<input id="answer4" type="text" class="form-control text-center col-6 d-inline-block" placeholder="Your Answer Here">
+					</div>
+				</div>
+				<div class="form-group row">
+					<div id="question5" class="col-6"></div>
+					<div class="col-6">
+						<p class="d-inline-block">6.</p>
+					 	<input id="answer5" type="text" class="form-control text-center col-6 d-inline-block" placeholder="Your Answer Here">
+					</div>
+				</div>
 
-</div>
+			</div>
 
-<div id="results" class="container my-2 text-center">
-	<button class="btn btn-info px-5 mb-5" onclick="resultsFunction()">See Results</button>	
-</div>
+			<div class="text-center">
+				<button type="button" onclick="testResults()" class="btn btn-primary my-5">See Results</button>
+				<h1 class="correct">Correct: <span id="correct"></span></h1>
+				<h1 class="incorrect">Incorrect:  <span id="incorrect"></span></h1>
+			</div>
 
-<div>
-	<h1 class="correct">Correct: 
-		<span id="correct"></span>
-	</h1>
-	<h1 class="Incorrect">Incorrect: 
-		<span id="incorrect"></span>
-	</h1>
-</div>
 
+
+	</div>
+
+
+<!-- Display correct and incorrect totals -->
+
+
+		
 
 
 
