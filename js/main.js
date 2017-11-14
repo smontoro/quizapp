@@ -40,7 +40,7 @@ for(var i = 0; i < questions.length; i++) {
 
 	var img = document.createElement("img")
 	img.setAttribute("src", questions[i].question)
-	img.className = "img-fluid col-6"
+	img.className = "img-fluid"
 
 	el.appendChild(img)
 }
@@ -63,12 +63,12 @@ function testResults() {
 		// check if the user answer matches the correct answer
 		if(answer == guess) {
 			// update class on questionSpot
-			questionSpot.className = 'correct';
+			questionSpot.className = questionSpot.className + ' correct';
 			// add one to correct
 			correct++;
 		} else {
 			// update class on questionSpot
-			questionSpot.className = 'incorrect';
+			questionSpot.className = questionSpot.className + ' incorrect';
 			// add one to incorrect
 			incorrect++;
 		};
