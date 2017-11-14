@@ -37,9 +37,10 @@ for(var i = 0; i < questions.length; i++) {
 	// store each element to add question too
 	var el = document.getElementById('question' + [i]);
 
+
 	var img = document.createElement("img")
 	img.setAttribute("src", questions[i].question)
-	img.className = "img-fluid"
+	img.className = "img-fluid col-6"
 
 	el.appendChild(img)
 }
