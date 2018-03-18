@@ -53,9 +53,8 @@ function testResults() {
 
 // loop through questions array
 	for(var i = 0; i < questions.length; i++) {
-		// store each correct answer
+		
 		var answer = questions[i].answer;
-		// store each user answer
 		var guess = document.getElementById('answer' + [i]).value;
 		// store element to add a class if correct or incorrect
 		var questionSpot = document.getElementById('question' + [i]);
